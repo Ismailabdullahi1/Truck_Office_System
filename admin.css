@@ -1,0 +1,186 @@
+
+
+/* Header container */
+.header-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+}
+
+/* Main dashboard container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.dashboard-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Sections */
+.section {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: opacity 0.3s ease;
+    display: none;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Hide sections by default */
+.hidden {
+    display: none;
+}
+
+/* Add Trip Form */
+.trip-form .form-group {
+    margin-bottom: 15px;
+}
+
+.trip-form .form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.trip-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.trip-form .form-group input:focus {
+    border-color: #4CAF50;
+}
+
+.form-submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Trip Reports Table */
+.reports-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.reports-table th, .reports-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.reports-table th {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.reports-table td {
+    background-color: #fff;
+}
+
+.view-details-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dashboard-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .section {
+        width: 90%;
+    }
+
+    .form-submit-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 2rem;
+    }
+
+    .dashboard-btn {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+    }
+
+    .form-submit-btn {
+        font-size: 1rem;
+    }
+}
+
+
